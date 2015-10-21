@@ -25,20 +25,7 @@ def spoon():
 @app.route("/hello/<name>")
 def hi_persoon(name):
     return "Hello {}!".format(name.title())
-    
-@app.route("/hello/<name>")
-#def hello_person(name):
- #   html = """
- #       <h1>
- #           Hello {}!
- #       </h1>
- #       <p>
- #           Here's a picture of a kitten.  Awww
- #       </p>
- #       <img src="http://placekitten.com/g/200/300">
-  #  """
- #   return html.format(name.title())
-    
+
 @app.route("/jedi/<name>")
 def hello_person(name):
     html = """
